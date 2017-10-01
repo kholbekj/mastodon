@@ -582,6 +582,17 @@
   position: absolute;
 }
 
+.status__wrapper {
+  &:focus {
+    outline: 0;
+    background: lighten($ui-base-color, 4%);
+
+    &.status-direct {
+      background: lighten($ui-base-color, 12%);
+    }
+  }
+}
+
 .status {
   padding: 8px 10px;
   padding-left: 68px;
